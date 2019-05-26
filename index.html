@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>React. Возможны побочные эффекты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/material/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+        .b {
+            display: block;
+        }
+
+        .c {
+            color: var(--color-medium);
+        }
+
+        .slide pre {
+            margin-top: 0;
+        }
+
+        .tiny-sample {
+            display: inline-block;
+            width: 0.8em;
+            height: 0.8em;
+            vertical-align: baseline;
+        }
+
+        .double {
+            font-weight: 100;
+            font-size: 48px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body class="shower full">
+
+<header class="caption">
+    <h1>React. Возможны побочные эффекты</h1>
+    <p>Владимир Кузнецов</p>
+</header>
+
+<section class="slide" id="contacts">
+    <h2>Владимир Кузнецов</h2>
+    <p>
+        <img alt="Twitter" src="img/twitter.svg" style="width: 24px; vertical-align: middle">
+        <a href="https://twitter.com/mistakster" target="_blank">@mistakster</a> (English)<br>
+        <img alt="Twitter" src="img/twitter.svg" style="width: 24px; vertical-align: middle">
+        <a href="https://twitter.com/mista_k" target="_blank">@mista_k</a> (больше про жизнь)
+    </p>
+    <p>
+        <img alt="Web-site" src="img/globe.svg" style="width: 24px; vertical-align: middle">
+        <a href="https://noteskeeper.ru" target="_blank">noteskeeper.ru</a>
+    </p>
+    <p>
+        Слайды презентации:
+        <a href="https://bit.ly/fc18-pp">bit.ly/fc18-pp</a>
+    </p>
+</section>
+
+<footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+</footer>
+
+<div class="progress"></div>
+
+<script src="shower/shower.min.js"></script>
+</body>
+</html>
