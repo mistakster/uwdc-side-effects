@@ -43,6 +43,89 @@
     <p>Владимир Кузнецов</p>
 </header>
 
+<section class="slide" id="title">
+    <h2>React. Возможны побочные эффекты</h2>
+    <p>Владимир Кузнецов</p>
+</section>
+
+<section class="slide">
+    Типовая React-компонента создает дерево дочерних DOM-узлов
+</section>
+
+<section class="slide">
+    Рекомендованный способ оформления React-компонент — это функции (функциональные компоненты). Чаще всего эти функции
+    будут чистыми, т.е. результат их работы зависит только от входящих параметров. Внутри они не порождают никакие
+    побочные эффекты.
+</section>
+
+<section class="slide">
+    Побочный эффект — любые действия работающей программы, изменяющие среду выполнения.
+</section>
+
+<section class="slide">
+    Управление побочными эффектами
+</section>
+
+<section class="slide">
+    В методах жизненного цикла (componentDidMount, componentDidUpdate, componentWillUnmount) можно менять произвольные
+    части страницы или делать асинхронные запросы.
+</section>
+
+<section class="slide">
+    Что можно менять
+
+    создавать узлы
+    менять атрибуты у существующих узлов
+    менять содержимое DOM-элементов вне дерева компонентов
+</section>
+
+<section class="slide">
+    Helmet A document head manager for React.
+</section>
+
+<section class="slide">
+    Демонстрация того, как это можно сделать самостоятельно
+</section>
+
+<section class="slide">
+    Как интегрироваться с другой библиотекой
+    создание экземпляра класса
+    использование синглетона
+</section>
+
+<section class="slide">
+    React-компонента создает контейнер. Далее контейнер передается библиотеке. При перерисовке контейнер может
+    измениться или удалиться. Библиотека должна уметь перерисовывать контент. Но, как правило, это не нужно, так как
+    контейнер не меняется.
+</section>
+
+<section class="slide">
+    Пример интеграции с видеоплеером. React создает контейнер, а VideoJS всё остальное.
+</section>
+
+<section class="slide">
+    Когда состояние ну нужно синхронизировать, то кроме создания и удаления контента ничего не требуется. Синхронизация
+    состояни всё усложняет, так как состояние в React-приложении может быть как локальным в компонентах, так и
+    глобальным.
+</section>
+
+<section class="slide">
+    Для синхронизации я рекомендую использовать только глобальное состояние через Redux, MobX, Storeon.
+</section>
+
+<section class="slide">
+    Пример с Redux — карты. Синхронизация состояния происходит в middleware.
+</section>
+
+<section class="slide">
+    Portals Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy
+    of the parent component.
+</section>
+
+<section class="slide">
+    React.createRef создает ссылку на DOM-элемент, который можно использовать как контейнер для сторонней библиотеки
+</section>
+
 <section class="slide" id="contacts">
     <h2>Владимир Кузнецов</h2>
     <p>
