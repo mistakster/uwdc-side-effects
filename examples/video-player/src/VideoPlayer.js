@@ -1,28 +1,46 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import 'video.js/dist/video-js.min.css';
 import VideoJS from 'video.js';
+import useDeepCompareEffect from './useDeepCompareEffect';
 
-const VideoPlayer = ({ children, ...rest }) => {
-  const playerElement = useRef(null);
+const VideoPlayer = (props) => {
+  const { dispatch, src, ...playerProps } = props;
+  const playerContainer = useRef(null);
 
-  useEffect(() => {
-    const player = VideoJS(playerElement.current);
+  function playerInitialization() {
+    const video = document.createElement('video');
+
+    video.classList.add('video-js');
+
+    playerContainer.current.appendChild(video);
+
+    const player = VideoJS(video, playerProps, () => {
+      dispatch({ type: 'ready' });
+    });
+
+    player.on('play', () => {
+      dispatch({ type: 'play' });
+    });
+
+    player.on('pause', () => {
+      dispatch({ type: 'pause' });
+    });
+
+    player.on('timeupdate', () => {
+      dispatch({ type: 'timeupdate', time: player.currentTime() });
+    });
+
+    player.src(src);
 
     return () => {
-      if (player) {
-        player.dispose();
-      }
+      player.dispose();
     }
-  });
+  }
+
+  useDeepCompareEffect(playerInitialization, [dispatch, src, playerProps]);
 
   return (
-    <div>
-      <div data-vjs-player="">
-        <video className="video-js" {...rest} ref={playerElement}>
-          {children}
-        </video>
-      </div>
-    </div>
+    <div ref={playerContainer}/>
   );
 };
 
