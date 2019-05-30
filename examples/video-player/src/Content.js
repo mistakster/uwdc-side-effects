@@ -1,7 +1,6 @@
 import React, { useReducer } from 'react';
 import VideoPlayer from './VideoPlayer';
 import Info from './Info';
-import './Content.css';
 
 const initialState = {
   ready: false,
@@ -28,18 +27,19 @@ const Content = ({ src }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="ContentRow">
-      <div className="ContentPlayerCell">
+    <div className="h-100 row">
+      <div className="col-8">
         <VideoPlayer
           dispatch={dispatch}
           fluid
+          aspectRatio="640:264"
           controls
           preload='auto'
           poster='https://vjs.zencdn.net/v/oceans.png'
           src={src}
         />
       </div>
-      <div className="ContentInfoCell">
+      <div className="col-4">
         <Info {...state}/>
       </div>
     </div>

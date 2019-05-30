@@ -1,15 +1,14 @@
 import React from 'react';
-import './Info.css';
 
 const Info = (props) => {
   const { ready, isPlaying, time } = props;
 
   return (
-    <dl className="Info">
+    <div className="text-light">
       <p>Ready: {ready ? 'Yes' : 'No'}</p>
       <p>Is playing: {isPlaying ? 'Yes' : 'No'}</p>
-      <p>Time: {time}</p>
-    </dl>
+      <p>Time: {Number(time).toFixed(4)}</p>
+    </div>
   );
 };
 
