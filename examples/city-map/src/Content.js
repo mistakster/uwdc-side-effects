@@ -1,15 +1,14 @@
 import React from 'react';
 import CityMap from './CityMap';
 import MarkerPanel from './MarkerPanel';
-import './Content.css';
 
 const Content = () => {
   return (
-    <div className="Content">
-      <div className="ContentCell">
+    <div className="h-100 row">
+      <div className="col-8">
         <CityMap/>
       </div>
-      <div className="ContentCell">
+      <div className="col-4">
         <MarkerPanel/>
       </div>
     </div>

@@ -22,7 +22,7 @@ const MarkerPanel = ({ addMarker, list }) => {
   return (
     <div>
       <div>
-        <button onClick={addMarker}>
+        <button onClick={addMarker} className="btn btn-success" type="button">
           Add marker
         </button>
       </div>

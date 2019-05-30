@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { connect } from 'react-redux';
-import './CityMap.css';
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -32,7 +31,7 @@ const CityMap = ({ createMap, destroyMap }) => {
   });
 
   return (
-    <div className="CityMap" ref={mapContainer}/>
+    <div className="w-100 h-100" ref={mapContainer}/>
   );
 };
 
