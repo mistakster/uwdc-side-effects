@@ -5,13 +5,13 @@ import DocumentTitleFunction from './DocumentTitleFunction';
 const Counter = () => {
   const [count, setCount] = useState(0);
 
-  const title = `You clicked ${count - count % 2} times`;
+  const title = `You clicked ${count} times`;
 
   return (
-    <div>
+    <div className="h-100 text-light text-center">
       <DocumentTitleFunction title={title}/>
       <p>{title}</p>
-      <button onClick={() => setCount(count + 1)}>
+      <button onClick={() => setCount(count + 1)} className="btn btn-success">
         Click me
       </button>
     </div>
