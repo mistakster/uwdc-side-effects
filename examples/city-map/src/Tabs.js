@@ -9,9 +9,9 @@ const Tabs = ({ titles, children }) => {
       <div className="nav nav-pills nav-fill my-2">
         {tabs.map((tab, index) => (
           <div key={index} className="nav-item">
-            <a href="#" onClick={() => setActiveTab(index)} className={`nav-link ${activeTab === index ? 'active' : ''}`}>
+            <span onClick={() => setActiveTab(index)} className={`nav-link ${activeTab === index ? 'active' : 'text-primary'}`}>
               {titles[index]}
-            </a>
+            </span>
           </div>
         ))}
       </div>
