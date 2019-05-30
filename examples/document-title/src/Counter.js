@@ -10,7 +10,7 @@ const Counter = () => {
   return (
     <div className="h-100 text-light text-center">
       <DocumentTitleFunction title={title}/>
-      <p>{title}</p>
+      <p className="mt-4">{title}</p>
       <button onClick={() => setCount(count + 1)} className="btn btn-success">
         Click me
       </button>
