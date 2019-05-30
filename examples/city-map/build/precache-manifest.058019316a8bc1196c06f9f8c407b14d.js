@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75b21b7ce4c37a0b15ca7db008e77d1c",
+    "revision": "050d81a14970f8d4a256a8daf70c5072",
     "url": "/uwdc-side-effects/examples/city-map/build/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uwdc-side-effects/examples/city-map/build/static/css/2.098bc035.chunk.css"
   },
   {
-    "revision": "c1053af184e9b92f65f9",
+    "revision": "055e1b222b64c0383297",
     "url": "/uwdc-side-effects/examples/city-map/build/static/css/main.b6f1234f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uwdc-side-effects/examples/city-map/build/static/js/2.3c40df58.chunk.js"
   },
   {
-    "revision": "c1053af184e9b92f65f9",
-    "url": "/uwdc-side-effects/examples/city-map/build/static/js/main.55ceb5fb.chunk.js"
+    "revision": "055e1b222b64c0383297",
+    "url": "/uwdc-side-effects/examples/city-map/build/static/js/main.4db2730e.chunk.js"
   },
   {
     "revision": "416d59bda3594a3d8abf",

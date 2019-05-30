@@ -26,7 +26,7 @@ const MarkerPanel = ({ addMarker, list }) => {
           Add marker
         </button>
       </div>
-      <div>
+      <div className="mt-2">
         <MarkerList list={list}/>
       </div>
     </div>
