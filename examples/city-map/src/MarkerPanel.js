@@ -20,7 +20,7 @@ const enhance = connect(mapStateToProps, mapDispatchToProps);
 
 const MarkerPanel = ({ addMarker, list }) => {
   return (
-    <div>
+    <div className="text-light">
       <div>
         <button onClick={addMarker} className="btn btn-success" type="button">
           Add marker

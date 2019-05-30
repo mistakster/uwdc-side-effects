@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/uwdc-side-effects/examples/city-map/build/static/css/main.b6f1234f.chunk.css",
-    "main.js": "/uwdc-side-effects/examples/city-map/build/static/js/main.4db2730e.chunk.js",
-    "main.js.map": "/uwdc-side-effects/examples/city-map/build/static/js/main.4db2730e.chunk.js.map",
+    "main.css": "/uwdc-side-effects/examples/city-map/build/static/css/main.6248796c.chunk.css",
+    "main.js": "/uwdc-side-effects/examples/city-map/build/static/js/main.71089857.chunk.js",
+    "main.js.map": "/uwdc-side-effects/examples/city-map/build/static/js/main.71089857.chunk.js.map",
     "runtime~main.js": "/uwdc-side-effects/examples/city-map/build/static/js/runtime~main.35b97586.js",
     "runtime~main.js.map": "/uwdc-side-effects/examples/city-map/build/static/js/runtime~main.35b97586.js.map",
     "static/css/2.098bc035.chunk.css": "/uwdc-side-effects/examples/city-map/build/static/css/2.098bc035.chunk.css",
     "static/js/2.3c40df58.chunk.js": "/uwdc-side-effects/examples/city-map/build/static/js/2.3c40df58.chunk.js",
     "static/js/2.3c40df58.chunk.js.map": "/uwdc-side-effects/examples/city-map/build/static/js/2.3c40df58.chunk.js.map",
     "index.html": "/uwdc-side-effects/examples/city-map/build/index.html",
-    "precache-manifest.058019316a8bc1196c06f9f8c407b14d.js": "/uwdc-side-effects/examples/city-map/build/precache-manifest.058019316a8bc1196c06f9f8c407b14d.js",
+    "precache-manifest.c883333745478b61f7c638b2c01bee56.js": "/uwdc-side-effects/examples/city-map/build/precache-manifest.c883333745478b61f7c638b2c01bee56.js",
     "service-worker.js": "/uwdc-side-effects/examples/city-map/build/service-worker.js",
     "static/css/2.098bc035.chunk.css.map": "/uwdc-side-effects/examples/city-map/build/static/css/2.098bc035.chunk.css.map",
-    "static/css/main.b6f1234f.chunk.css.map": "/uwdc-side-effects/examples/city-map/build/static/css/main.b6f1234f.chunk.css.map",
+    "static/css/main.6248796c.chunk.css.map": "/uwdc-side-effects/examples/city-map/build/static/css/main.6248796c.chunk.css.map",
     "static/media/logo.svg": "/uwdc-side-effects/examples/city-map/build/static/media/logo.5d5d9eef.svg"
   }
 }
