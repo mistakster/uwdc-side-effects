@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/uwdc-side-effects/examples/document-title/build/static/css/main.6248796c.chunk.css",
+    "main.js": "/uwdc-side-effects/examples/document-title/build/static/js/main.62825be8.chunk.js",
+    "main.js.map": "/uwdc-side-effects/examples/document-title/build/static/js/main.62825be8.chunk.js.map",
+    "runtime~main.js": "/uwdc-side-effects/examples/document-title/build/static/js/runtime~main.b0f46ff0.js",
+    "runtime~main.js.map": "/uwdc-side-effects/examples/document-title/build/static/js/runtime~main.b0f46ff0.js.map",
+    "static/js/2.f0910273.chunk.js": "/uwdc-side-effects/examples/document-title/build/static/js/2.f0910273.chunk.js",
+    "static/js/2.f0910273.chunk.js.map": "/uwdc-side-effects/examples/document-title/build/static/js/2.f0910273.chunk.js.map",
+    "index.html": "/uwdc-side-effects/examples/document-title/build/index.html",
+    "precache-manifest.fc6c4cd8c183646865b39b1e7f3a74ca.js": "/uwdc-side-effects/examples/document-title/build/precache-manifest.fc6c4cd8c183646865b39b1e7f3a74ca.js",
+    "service-worker.js": "/uwdc-side-effects/examples/document-title/build/service-worker.js",
+    "static/css/main.6248796c.chunk.css.map": "/uwdc-side-effects/examples/document-title/build/static/css/main.6248796c.chunk.css.map",
+    "static/media/logo.svg": "/uwdc-side-effects/examples/document-title/build/static/media/logo.5d5d9eef.svg"
+  }
+}
