@@ -8,7 +8,7 @@ const Counter = () => {
   const title = `You clicked ${count} times`;
 
   return (
-    <div className="h-100 text-light text-center">
+    <div>
       <DocumentTitleFunction title={title}/>
       <p className="mt-4">{title}</p>
       <button onClick={() => setCount(count + 1)} className="btn btn-success">
