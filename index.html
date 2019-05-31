@@ -43,48 +43,151 @@
     <p>Владимир Кузнецов</p>
 </header>
 
-<section class="slide" id="title">
-    <h2>React. Возможны побочные эффекты</h2>
+<section class="slide clear" id="title">
+    <h2 class="shout">React. Возможны побочные эффекты</h2>
     <p>Владимир Кузнецов</p>
 </section>
 
-<section class="slide">
-    Типовая React-компонента создает дерево дочерних DOM-узлов
+<section class="slide clear">
+    <h2 class="shout">Типовая React-компонента</h2>
 </section>
 
 <section class="slide">
-    Рекомендованный способ оформления React-компонент — это функции (функциональные компоненты). Чаще всего эти функции
-    будут чистыми, т.е. результат их работы зависит только от входящих параметров. Внутри они не порождают никакие
-    побочные эффекты.
+    <pre>
+        <code>class Text extends React.Component {</code>
+        <code>  render() {</code>
+        <code>    return &lt;p>{this.props.text}&lt;/p></code>
+        <code>  }</code>
+        <code>}</code>
+    </pre>
+    <pre class="next">
+        <code>const Text = ({ text }) => (</code>
+        <code>  &lt;p>{text}&lt;/p></code>
+        <code>);</code>
+    </pre>
+    <footer>
+        Типовая React-компонента получает на вход набор параметров
+        и возвращает описание DOM-элементов, которые вы хотите получить на экране.
+    </footer>
 </section>
 
 <section class="slide">
-    Побочный эффект — любые действия работающей программы, изменяющие среду выполнения.
+    <h2>Результат зависит от</h2>
+    <ul>
+        <li>переданных <strong>props</strong>;</li>
+        <li>внутреннего <strong>state</strong>;</li>
+        <li>внешнего <strong>context</strong>.</li>
+    </ul>
+</section>
+
+<section class="slide clear">
+    <h2 class="shout">Побочный<br/>эффект</h2>
 </section>
 
 <section class="slide">
-    Управление побочными эффектами
+    <p style="font-size: 200%;">Побочный эффект &mdash; любые действия работающей программы, изменяющие среду выполнения.</p>
+</section>
+
+<section class="slide clear">
+    <h2 class="shout">Управление побочными эффектами</h2>
 </section>
 
 <section class="slide">
-    В методах жизненного цикла (componentDidMount, componentDidUpdate, componentWillUnmount) можно менять произвольные
-    части страницы или делать асинхронные запросы.
+    <h2>В методах жизненного цикла</h2>
+    <pre>
+        <code>class Text extends React.Component {</code>
+        <code>  componentDidMount() { <span class="comment">/* добавили */</span> }</code>
+        <code>  componentDidUpdate() { <span class="comment">/* обновили */</span> }</code>
+        <code>  componentWillUnmount() { <span class="comment">/* удалили */</span> }</code>
+        <code>  render() {</code>
+        <code>    return &lt;p>{this.props.text}&lt;/p></code>
+        <code>  }</code>
+        <code>}</code>
+    </pre>
 </section>
 
 <section class="slide">
-    Что можно менять
-
-    создавать узлы
-    менять атрибуты у существующих узлов
-    менять содержимое DOM-элементов вне дерева компонентов
+    <h2>В хуках</h2>
+    <pre>
+        <code>const Text = ({ text }) => {</code>
+        <code>  function createSideEffect() {</code>
+        <code>    <span class="comment">/* добавили и обновили */</span></code>
+        <code>  }</code>
+        <code>  useEffect(createSideEffect);</code>
+        <code>  return &lt;p>{text}&lt;/p></code>
+        <code>};</code>
+    </pre>
 </section>
 
 <section class="slide">
-    Helmet A document head manager for React.
+    <h2>В хуках</h2>
+    <pre>
+        <code>const Text = ({ text }) => {</code>
+        <code>  function createSideEffect() {</code>
+        <code>    <span class="comment">/* добавили и обновили text */</span></code>
+        <code>    return () => { <span class="comment">/* удалили */</span> }</code>
+        <code>  }</code>
+        <code>  useEffect(createSideEffect, [text]);</code>
+        <code>  return &lt;p>{text}&lt;/p></code>
+        <code>};</code>
+    </pre>
 </section>
 
 <section class="slide">
-    Демонстрация того, как это можно сделать самостоятельно
+    <h2>В хуках</h2>
+    <pre>
+        <code>const Text = ({ text }) => {</code>
+        <code>  function createSideEffect() {</code>
+        <code>    <span class="comment">/* добавили */</span></code>
+        <code>  }</code>
+        <code>  useEffect(createSideEffect, []);</code>
+        <code>  return &lt;p>{text}&lt;/p></code>
+        <code>};</code>
+    </pre>
+</section>
+
+<section class="slide">
+    <h2>Что обычно делают</h2>
+    <ul>
+        <li>запускают асинхронные запросы;</li>
+        <li class="next">вызывают action creator;</li>
+        <li class="next">&hellip;</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>Что ещё можно делать</h2>
+    <ul>
+        <li>создавать дочерние DOM-элементы;</li>
+        <li class="next">менять атрибуты у существующих DOM-элементов;</li>
+        <li class="next">менять содержимое DOM-элементов вне дерева компонентов.</li>
+    </ul>
+</section>
+
+<section class="slide clear">
+    <h2 class="shout">Модуль<br/>react-side-effect</h2>
+</section>
+
+<section class="slide clear">
+    <img src="img/react-side-effect.png" class="cover w h">
+</section>
+
+<section class="slide clear">
+    <img src="img/react-document-title.png" class="cover w h">
+</section>
+
+<section class="slide clear black">
+    <img src="img/all-clear.jpg" class="cover h">
+</section>
+
+<section class="slide clear">
+    <h2 class="shout">Хуки!</h2>
+</section>
+
+<section class="slide">
+    <a href="https://reactjs.org/docs/hooks-effect.html" target="_blank">
+        <img src="img/using-effect-hook.png" class="cover h">
+    </a>
 </section>
 
 <section class="slide">
