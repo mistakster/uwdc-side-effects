@@ -44,8 +44,15 @@
 </header>
 
 <section class="slide clear" id="title">
-    <h2 class="shout">React. Возможны побочные эффекты</h2>
-    <p>Владимир Кузнецов</p>
+    <div style="text-shadow: 1px 1px 0 rgba(0,0,0,0.6)">
+        <h2 style="color: white;">React. Возможны побочные эффекты</h2>
+        <p style="color: white;">Владимир Кузнецов</p>
+        <p style="color: white;">UWDC 2019, Челябинск</p>
+    </div>
+    <video preload="auto" autoplay controls loop class="cover w place t"
+        style="transform: translate(-50%, 0) scaleX(-1)">
+        <source src="img/cover.mp4" type="video/mp4">
+    </video>
 </section>
 
 <section class="slide clear">
@@ -65,10 +72,12 @@
         <code>  &lt;p>{text}&lt;/p></code>
         <code>);</code>
     </pre>
+<!--
     <footer>
         Типовая React-компонента получает на вход набор параметров
         и возвращает описание DOM-элементов, которые вы хотите получить на экране.
     </footer>
+-->
 </section>
 
 <section class="slide">
@@ -85,7 +94,8 @@
 </section>
 
 <section class="slide">
-    <p style="font-size: 200%;">Побочный эффект &mdash; любые действия работающей программы, изменяющие среду выполнения.</p>
+    <p style="font-size: 200%;"><strong>Побочный эффект</strong> &mdash;
+        любые действия работающей программы, изменяющие среду выполнения.</p>
 </section>
 
 <section class="slide clear">
@@ -93,7 +103,7 @@
 </section>
 
 <section class="slide">
-    <h2>В методах жизненного цикла</h2>
+    <!--    <h2>В методах жизненного цикла</h2>-->
     <pre>
         <code>class Text extends React.Component {</code>
         <code>  componentDidMount() { <span class="comment">/* добавили */</span> }</code>
@@ -202,7 +212,8 @@
 
 <section class="slide clear">
     <h2 class="shout">
-        <a href="https://mistakster.github.io/uwdc-side-effects/examples/document-title/build/index.html" target="_blank">
+        <a href="https://mistakster.github.io/uwdc-side-effects/examples/document-title/build/index.html"
+            target="_blank">
             Демо #1
         </a>
     </h2>
@@ -221,11 +232,13 @@
 </section>
 
 <section class="slide">
+<!--
     <footer>
         React-компонента создает контейнер. Далее контейнер передается библиотеке. При перерисовке контейнер может
         измениться или удалиться. Библиотека должна уметь перерисовывать контент. Но, как правило, это не нужно, так как
         контейнер не меняется.
     </footer>
+-->
 </section>
 
 <section class="slide clear">
@@ -234,9 +247,11 @@
             Демо #2
         </a>
     </h2>
+<!--
     <footer>
         Пример интеграции с видеоплеером. React создает контейнер, а VideoJS всё остальное.
     </footer>
+-->
 </section>
 
 <section class="slide">
@@ -244,11 +259,14 @@
 </section>
 
 <section class="slide">
+<!--
     <footer>
-        Когда состояние ну нужно синхронизировать, то кроме создания и удаления контента ничего не требуется. Синхронизация
+        Когда состояние ну нужно синхронизировать, то кроме создания и удаления контента ничего не требуется.
+        Синхронизация
         состояни всё усложняет, так как состояние в React-приложении может быть как локальным в компонентах, так и
         глобальным. Для синхронизации я рекомендую использовать только глобальное состояние через Redux.
     </footer>
+-->
 </section>
 
 <section class="slide">
@@ -257,17 +275,21 @@
             Демо #3
         </a>
     </h2>
+<!--
     <footer>
         Пример с Redux — карты. Синхронизация состояния происходит в middleware.
     </footer>
+-->
 </section>
 
 <section class="slide clear">
     <h2 class="shout">Порталы</h2>
+<!--
     <footer>
         Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy
         of the parent component.
     </footer>
+-->
 </section>
 
 <section class="slide" id="contacts">
