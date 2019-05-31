@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DocumentTitleFunction from './DocumentTitleFunction';
-// import DocumentTitleClass from './DocumentTitleClass';
+import DocumentTitle from './DocumentTitleFunction';
+// import DocumentTitle from './DocumentTitleClass';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -9,7 +9,7 @@ const Counter = () => {
 
   return (
     <div>
-      <DocumentTitleFunction title={title}/>
+      <DocumentTitle title={title}/>
       <p className="mt-4">{title}</p>
       <button onClick={() => setCount(count + 1)} className="btn btn-success">
         Click me
