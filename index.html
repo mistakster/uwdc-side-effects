@@ -10,29 +10,12 @@
             --slide-ratio: calc(16 / 9);
         }
 
-        .b {
-            display: block;
-        }
-
         .c {
             color: var(--color-medium);
         }
 
         .slide pre {
             margin-top: 0;
-        }
-
-        .tiny-sample {
-            display: inline-block;
-            width: 0.8em;
-            height: 0.8em;
-            vertical-align: baseline;
-        }
-
-        .double {
-            font-weight: 100;
-            font-size: 48px;
-            line-height: 1.5;
         }
     </style>
 </head>
@@ -240,12 +223,17 @@
 <section class="slide">
     <h2>Как интегрироваться с другой библиотекой</h2>
     <ul>
-        <li>создание экземпляра класса</li>
-        <li>использование синглетона</li>
+        <li>создать экземпляра класса;</li>
+        <li class="next">использовать синглетон.</li>
     </ul>
 </section>
 
 <section class="slide">
+    <h2>Как интегрироваться с другой библиотекой</h2>
+    <ul>
+        <li>получить ссылку на DOM-элемент через <strong>ref</strong>;</li>
+        <li class="next">передать этот элемент в библиотеку.</li>
+    </ul>
 <!--
     <footer>
         React-компонента создает контейнер. Далее контейнер передается библиотеке. При перерисовке контейнер может
@@ -253,6 +241,18 @@
         контейнер не меняется.
     </footer>
 -->
+</section>
+
+<section class="slide">
+    <pre>
+        <code>const Widget = () => {</code>
+        <code>  const widgetContainer = useRef(null);</code>
+        <code>  useEffect(initWidget);</code>
+        <code>  return (</code>
+        <code>    &lt;div ref={widgetContainer}/></code>
+        <code>  );</code>
+        <code>};</code>
+    </pre>
 </section>
 
 <section class="slide clear">
@@ -268,19 +268,16 @@
 -->
 </section>
 
-<section class="slide">
-    React.createRef создает ссылку на DOM-элемент, который можно использовать как контейнер для сторонней библиотеки
-</section>
-
-<section class="slide">
-<!--
-    <footer>
-        Когда состояние ну нужно синхронизировать, то кроме создания и удаления контента ничего не требуется.
-        Синхронизация
-        состояни всё усложняет, так как состояние в React-приложении может быть как локальным в компонентах, так и
-        глобальным. Для синхронизации я рекомендую использовать только глобальное состояние через Redux.
-    </footer>
--->
+<section class="slide clear">
+    <h2 class="shout">Синхронизация состояния</h2>
+    <!--
+        <footer>
+            Когда состояние ну нужно синхронизировать, то кроме создания и удаления контента ничего не требуется.
+            Синхронизация
+            состояни всё усложняет, так как состояние в React-приложении может быть как локальным в компонентах, так и
+            глобальным. Для синхронизации я рекомендую использовать только глобальное состояние через Redux.
+        </footer>
+    -->
 </section>
 
 <section class="slide">
@@ -304,6 +301,10 @@
         of the parent component.
     </footer>
 -->
+</section>
+
+<section class="slide clear">
+    <h2 class="shout">Итоги</h2>
 </section>
 
 <section class="slide" id="contacts">
