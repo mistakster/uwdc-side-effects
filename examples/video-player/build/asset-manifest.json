@@ -1,18 +1,25 @@
 {
   "files": {
     "main.css": "/uwdc-side-effects/examples/video-player/build/static/css/main.30f6065f.chunk.css",
-    "main.js": "/uwdc-side-effects/examples/video-player/build/static/js/main.2ec07525.chunk.js",
-    "main.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/main.2ec07525.chunk.js.map",
-    "runtime~main.js": "/uwdc-side-effects/examples/video-player/build/static/js/runtime~main.2374042f.js",
-    "runtime~main.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/runtime~main.2374042f.js.map",
-    "static/css/2.e1395683.chunk.css": "/uwdc-side-effects/examples/video-player/build/static/css/2.e1395683.chunk.css",
-    "static/js/2.80d8aa1b.chunk.js": "/uwdc-side-effects/examples/video-player/build/static/js/2.80d8aa1b.chunk.js",
-    "static/js/2.80d8aa1b.chunk.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/2.80d8aa1b.chunk.js.map",
+    "main.js": "/uwdc-side-effects/examples/video-player/build/static/js/main.cac8b5fa.chunk.js",
+    "main.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/main.cac8b5fa.chunk.js.map",
+    "runtime-main.js": "/uwdc-side-effects/examples/video-player/build/static/js/runtime-main.794316e5.js",
+    "runtime-main.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/runtime-main.794316e5.js.map",
+    "static/css/2.07904242.chunk.css": "/uwdc-side-effects/examples/video-player/build/static/css/2.07904242.chunk.css",
+    "static/js/2.6dc2e83b.chunk.js": "/uwdc-side-effects/examples/video-player/build/static/js/2.6dc2e83b.chunk.js",
+    "static/js/2.6dc2e83b.chunk.js.map": "/uwdc-side-effects/examples/video-player/build/static/js/2.6dc2e83b.chunk.js.map",
     "index.html": "/uwdc-side-effects/examples/video-player/build/index.html",
-    "precache-manifest.64a6765dbf492a710468da34c984585c.js": "/uwdc-side-effects/examples/video-player/build/precache-manifest.64a6765dbf492a710468da34c984585c.js",
+    "precache-manifest.192fd367a9b42e85042c44f297c2412d.js": "/uwdc-side-effects/examples/video-player/build/precache-manifest.192fd367a9b42e85042c44f297c2412d.js",
     "service-worker.js": "/uwdc-side-effects/examples/video-player/build/service-worker.js",
-    "static/css/2.e1395683.chunk.css.map": "/uwdc-side-effects/examples/video-player/build/static/css/2.e1395683.chunk.css.map",
+    "static/css/2.07904242.chunk.css.map": "/uwdc-side-effects/examples/video-player/build/static/css/2.07904242.chunk.css.map",
     "static/css/main.30f6065f.chunk.css.map": "/uwdc-side-effects/examples/video-player/build/static/css/main.30f6065f.chunk.css.map",
     "static/media/logo.svg": "/uwdc-side-effects/examples/video-player/build/static/media/logo.5d5d9eef.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.794316e5.js",
+    "static/css/2.07904242.chunk.css",
+    "static/js/2.6dc2e83b.chunk.js",
+    "static/css/main.30f6065f.chunk.css",
+    "static/js/main.cac8b5fa.chunk.js"
+  ]
 }
